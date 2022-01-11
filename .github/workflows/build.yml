@@ -1,0 +1,24 @@
+name: Build Pack
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: "build-${{ github.event.sha }}"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run the build script
+        run: ./build.py
+      
+      - name: Upload the artifact
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          name: gurkpack
+          path: build/gurkpack
