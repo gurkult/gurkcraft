@@ -1,0 +1,18 @@
+carrot:
+  type: item
+  name: Golden Carrots
+  item: minecraft:golden_carrot
+  price: 200
+  amount: 8
+night_vision:
+  type: effect
+  name: Night Vision
+  item: minecraft:night_vision
+  price: 250
+  amount: 6000
+torch:
+  type: item
+  name: Torches
+  item: minecraft:torch
+  price: 100
+  amount: 32
