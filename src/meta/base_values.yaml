@@ -176,9 +176,9 @@ minecraft:cracked_deepslate_tiles: 1
 minecraft:cracked_nether_bricks: 1
 
 # End
-minecraft:chorus_plant: 20
-minecraft:chorus_flower: 5
-minecraft:end_stone: 20
+minecraft:chorus_plant: 10
+minecraft:chorus_flower: 1
+minecraft:end_stone: 1
 minecraft:dragon_egg: -1
 
 # Interactive blocks
