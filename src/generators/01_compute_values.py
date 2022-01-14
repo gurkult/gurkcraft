@@ -114,7 +114,8 @@ class Generator(BaseGenerator):
                 else:
                     raise GeneratorError(f"Unknown item {name}")
 
-        print(f"Items without values: {', '.join(item.name for item in items.values() if not item.value)}")
+        if without_values := [item.name for item in items.values() if not item.value]:
+            print(f"      Items without values: {', '.join(without_values)}")
 
         with (self.INTERMEDIATE / "item_values.yaml").open("w") as file:
             yaml.dump({item.name: item.value for item in items.values()}, file, sort_keys=False)
