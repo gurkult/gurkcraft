@@ -10,12 +10,21 @@ class GeneratorResult:
     tick_hooks: list[str] = dataclasses.field(default_factory=list)
 
 
+class GeneratorError(Exception):
+    pass
+
+
 class BaseGenerator(ABC):
     name: str
 
-    META = Path(".") / "src" / "meta"
+    SOURCE = Path(".") / "src"
+    META = SOURCE / "meta"
+    EXTERNAL = SOURCE / "external"
 
-    PACK = Path(".") / "build" / "gurkpack"
+    BUILD = Path(".") / "build"
+    INTERMEDIATE = BUILD / "intermediate"
+    PACK = BUILD / "gurkpack"
+
     NAMESPACE = PACK / "data" / "generated"
     FUNCTIONS = NAMESPACE / "functions"
 
