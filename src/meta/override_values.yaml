@@ -1,0 +1,22 @@
+# Missing roots due to circular references:
+minecraft:raw_iron: 100
+minecraft:iron_ingot: 100
+minecraft:coal: 20
+minecraft:raw_gold: 200
+minecraft:gold_ingot: 200
+minecraft:raw_copper: 50
+minecraft:copper_ingot: 50
+minecraft:diamond: -1
+minecraft:emerald: 200
+minecraft:lapis_lazuli: 50
+minecraft:redstone: 50
+minecraft:slime_ball: 20
+minecraft:wheat: 5
+minecraft:kelp: 5
+minecraft:dried_kelp: 5
+minecraft:honey_bottle: 20
+
+# Balancing:
+minecraft:granite: 1
+minecraft:diorite: 1
+minecraft:andesite: 1
