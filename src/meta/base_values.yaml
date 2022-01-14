@@ -15,18 +15,18 @@ minecraft:red_sand: 5
 minecraft:gravel: 5
 minecraft:coal_ore: 25
 minecraft:deepslate_coal_ore: 25
-minecraft:iron_ore: 100
-minecraft:deepslate_iron_ore: 100
-minecraft:copper_ore: 50
-minecraft:deepslate_copper_ore: 50
-minecraft:gold_ore: 250
-minecraft:deepslate_gold_ore: 250
-minecraft:redstone_ore: 100
-minecraft:deepslate_redstone_ore: 100
+minecraft:iron_ore: 50
+minecraft:deepslate_iron_ore: 50
+minecraft:copper_ore: 20
+minecraft:deepslate_copper_ore: 20
+minecraft:gold_ore: 100
+minecraft:deepslate_gold_ore: 100
+minecraft:redstone_ore: 50
+minecraft:deepslate_redstone_ore: 50
 minecraft:emerald_ore: 1000
 minecraft:deepslate_emerald_ore: 1000
-minecraft:lapis_ore: 100
-minecraft:deepslate_lapis_ore: 100
+minecraft:lapis_ore: 50
+minecraft:deepslate_lapis_ore: 50
 minecraft:diamond_ore: -1
 minecraft:deepslate_diamond_ore: -1
 minecraft:pointed_dripstone: 1
@@ -43,7 +43,7 @@ minecraft:dark_oak_sapling: 20
 minecraft:crimson_nylium: 1
 minecraft:warped_nylium: 1
 minecraft:nether_gold_ore: 100
-minecraft:nether_quartz_ore: 100
+minecraft:nether_quartz_ore: 75
 minecraft:ancient_debris: 2000
 minecraft:budding_amethyst: -1
 minecraft:exposed_copper: 400
@@ -60,22 +60,22 @@ minecraft:gilded_blackstone: 1
 minecraft:cracked_polished_blackstone_bricks: 1
 
 # Wood
-minecraft:oak_log: 40
-minecraft:spruce_log: 40
-minecraft:birch_log: 40
-minecraft:jungle_log: 40
-minecraft:acacia_log: 40
-minecraft:dark_oak_log: 40
-minecraft:crimson_stem: 40
-minecraft:warped_stem: 40
-minecraft:stripped_oak_log: 40
-minecraft:stripped_spruce_log: 40
-minecraft:stripped_birch_log: 40
-minecraft:stripped_jungle_log: 40
-minecraft:stripped_acacia_log: 40
-minecraft:stripped_dark_oak_log: 40
-minecraft:stripped_crimson_stem: 40
-minecraft:stripped_warped_stem: 40
+minecraft:oak_log: 20
+minecraft:spruce_log: 20
+minecraft:birch_log: 20
+minecraft:jungle_log: 20
+minecraft:acacia_log: 20
+minecraft:dark_oak_log: 20
+minecraft:crimson_stem: 20
+minecraft:warped_stem: 20
+minecraft:stripped_oak_log: 20
+minecraft:stripped_spruce_log: 20
+minecraft:stripped_birch_log: 20
+minecraft:stripped_jungle_log: 20
+minecraft:stripped_acacia_log: 20
+minecraft:stripped_dark_oak_log: 20
+minecraft:stripped_crimson_stem: 20
+minecraft:stripped_warped_stem: 20
 minecraft:oak_leaves: 1
 minecraft:spruce_leaves: 1
 minecraft:birch_leaves: 1
@@ -153,7 +153,7 @@ minecraft:brown_mushroom_block: 1
 
 # Special building blocks
 minecraft:petrified_oak_slab: -1
-minecraft:smooth_quartz: 80
+minecraft:smooth_quartz: 40
 minecraft:smooth_red_sandstone: 20
 minecraft:smooth_sandstone: 20
 minecraft:smooth_stone: 4
@@ -277,11 +277,11 @@ minecraft:dead_fire_coral_fan: 1
 minecraft:dead_horn_coral_fan: 1
 
 # Transportation
-minecraft:saddle: 200
-minecraft:elytra: 5000
-minecraft:iron_horse_armor: 200
-minecraft:golden_horse_armor: 400
-minecraft:diamond_horse_armor: 800
+minecraft:saddle: 600
+minecraft:elytra: 20000
+minecraft:iron_horse_armor: 400
+minecraft:golden_horse_armor: 800
+minecraft:diamond_horse_armor: 1200
 
 # Netherite tools & armor (disabled because made of diamonds)
 minecraft:netherite_sword: -1
