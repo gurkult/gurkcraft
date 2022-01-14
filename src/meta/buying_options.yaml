@@ -9,7 +9,7 @@ night_vision:
   name: Night Vision
   item: minecraft:night_vision
   price: 250
-  amount: 6000
+  amount: 600
 torch:
   type: item
   name: Torches
