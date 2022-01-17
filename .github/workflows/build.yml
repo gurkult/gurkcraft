@@ -23,9 +23,15 @@ jobs:
 
       - name: Run the build script
         run: ./build.py
-      
-      - name: Upload the artifact
+
+      - name: Upload the main artifact
         uses: actions/upload-artifact@v2.3.1
         with:
           name: gurkpack
           path: build/gurkpack
+
+      - name: Upload intermediate data
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          name: intermediate
+          path: build/intermediate

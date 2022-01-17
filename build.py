@@ -5,16 +5,18 @@ from importlib import import_module
 from shutil import copy, make_archive, rmtree
 import json
 
-from src.generators._base import BaseGenerator
+from src.generators._base import BaseGenerator, GeneratorError
 
 SOURCE = pathlib.Path(".") / "src"
 
-TARGET = pathlib.Path(".") / "build"
-rmtree(TARGET, ignore_errors=True)
-TARGET.mkdir(exist_ok=True)
+BUILD = pathlib.Path(".") / "build"
+rmtree(BUILD, ignore_errors=True)
+BUILD.mkdir(exist_ok=True)
 
-PACK = TARGET / "gurkpack"
+PACK = BUILD / "gurkpack"
 PACK.mkdir()
+INTERMEDIATE = BUILD / "intermediate"
+INTERMEDIATE.mkdir()
 
 GEN_NAMESPACE = PACK / "data" / "generated"
 FUNCTIONS = GEN_NAMESPACE / "functions"
@@ -37,7 +39,11 @@ for generator in GENERATORS:
     gen: BaseGenerator = import_module(module_path).Generator()
 
     print(f"[{step}/{STEPS}] {gen.name}")
-    result = gen.generate()
+    try:
+        result = gen.generate()
+    except GeneratorError as e:
+        print(f"      Error while executing generator: {e}")
+        exit(1)
 
     setup_functions.extend(result.setup_hooks)
     tick_functions.extend(result.tick_hooks)
