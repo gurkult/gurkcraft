@@ -46,9 +46,9 @@ minecraft:nether_gold_ore: 100
 minecraft:nether_quartz_ore: 75
 minecraft:ancient_debris: 2000
 minecraft:budding_amethyst: -1
-minecraft:exposed_copper: 400
-minecraft:weathered_copper: 350
-minecraft:oxidized_copper: 300
+minecraft:exposed_copper: 175
+minecraft:weathered_copper: 115
+minecraft:oxidized_copper: 100
 minecraft:netherrack: 1
 minecraft:soul_sand: 1
 minecraft:soul_soil: 1
@@ -153,14 +153,14 @@ minecraft:brown_mushroom_block: 1
 
 # Special building blocks
 minecraft:petrified_oak_slab: -1
-minecraft:smooth_quartz: 40
+minecraft:smooth_quartz: 80
 minecraft:smooth_red_sandstone: 20
 minecraft:smooth_sandstone: 20
 minecraft:smooth_stone: 4
 minecraft:obsidian: 100
 minecraft:spawner: -1
 minecraft:farmland: 1
-minecraft:ice: 2
+minecraft:ice: 1
 
 # Stone variants
 minecraft:infested_stone: 1
@@ -381,21 +381,21 @@ minecraft:firework_star: 10
 minecraft:dragon_breath: 100
 
 # Filled buckets
-minecraft:water_bucket: 300
-minecraft:lava_bucket: 300
-minecraft:milk_bucket: 300
-minecraft:pufferfish_bucket: 300
-minecraft:salmon_bucket: 300
-minecraft:cod_bucket: 300
-minecraft:tropical_fish_bucket: 300
-minecraft:axolotl_bucket: 300
-minecraft:powder_snow_bucket: 300
+minecraft:water_bucket: 150
+minecraft:lava_bucket: 150
+minecraft:milk_bucket: 150
+minecraft:pufferfish_bucket: 150
+minecraft:salmon_bucket: 150
+minecraft:cod_bucket: 150
+minecraft:tropical_fish_bucket: 150
+minecraft:axolotl_bucket: 150
+minecraft:powder_snow_bucket: 150
 
 # Dyes
 minecraft:green_dye: 1
 
 # Items
-minecraft:filled_map: 460
+minecraft:filled_map: 250
 minecraft:potion: -1
 minecraft:experience_bottle: 100
 minecraft:written_book: -1
