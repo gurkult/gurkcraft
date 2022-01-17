@@ -114,6 +114,15 @@ class Generator(BaseGenerator):
                 else:
                     raise GeneratorError(f"Unknown item {name}")
 
+            # Run once more without updating the values to make sure it doesn't get recursively overridden
+            for name, value in override_values.items():
+                for item in items.values():
+                    if item.name == name:
+                        item.value = value
+                        break
+                else:
+                    raise GeneratorError(f"Unknown item {name}")
+
         if without_values := [item.name for item in items.values() if not item.value]:
             print(f"      Items without values: {', '.join(without_values)}")
 

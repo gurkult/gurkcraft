@@ -20,3 +20,25 @@ minecraft:honey_bottle: 20
 minecraft:granite: 1
 minecraft:diorite: 1
 minecraft:andesite: 1
+
+# Duplicable items:
+minecraft:powered_rail: -1
+minecraft:detector_rail: -1
+minecraft:rail: -1
+minecraft:activator_rail: -1
+minecraft:white_carpet: -1
+minecraft:orange_carpet: -1
+minecraft:magenta_carpet: -1
+minecraft:light_blue_carpet: -1
+minecraft:yellow_carpet: -1
+minecraft:lime_carpet: -1
+minecraft:pink_carpet: -1
+minecraft:gray_carpet: -1
+minecraft:light_gray_carpet: -1
+minecraft:cyan_carpet: -1
+minecraft:purple_carpet: -1
+minecraft:blue_carpet: -1
+minecraft:brown_carpet: -1
+minecraft:green_carpet: -1
+minecraft:red_carpet: -1
+minecraft:black_carpet: -1
