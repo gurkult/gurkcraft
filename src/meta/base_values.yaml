@@ -23,8 +23,8 @@ minecraft:gold_ore: 100
 minecraft:deepslate_gold_ore: 100
 minecraft:redstone_ore: 50
 minecraft:deepslate_redstone_ore: 50
-minecraft:emerald_ore: 1000
-minecraft:deepslate_emerald_ore: 1000
+minecraft:emerald_ore: 250
+minecraft:deepslate_emerald_ore: 250
 minecraft:lapis_ore: 50
 minecraft:deepslate_lapis_ore: 50
 minecraft:diamond_ore: -1
