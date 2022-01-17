@@ -1,4 +1,0 @@
-scoreboard objectives add lib_teleport_x dummy
-scoreboard objectives add lib_teleport_y dummy
-scoreboard objectives add lib_teleport_z dummy
-scoreboard objectives add lib_teleport_is_relative dummy
