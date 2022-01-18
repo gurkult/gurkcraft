@@ -33,7 +33,7 @@ class BaseGenerator(ABC):
         pass
 
     @staticmethod
-    def _format_command(command: str, **kwargs: str) -> str:
+    def _format_command(command: str, **kwargs: str|int|float) -> str:
         for key, value in kwargs.items():
             command = command.replace(f"${key}", str(value))
         return command
