@@ -15,12 +15,12 @@ hopper:
   name: Hoppers
   item: minecraft:hopper
   price: 500
-  amount: 16
+  amount: 8
 cobblestone:
   type: item
   name: Cobblestone
   item: minecraft:cobblestone
-  price: 10
+  price: 50
   amount: 64
 book:
   type: item
@@ -32,7 +32,7 @@ firework:
   type: item
   name: Fireworks
   item: minecraft:firework_rocket{Fireworks:{Flight:2}}
-  price: 100
+  price: 500
   amount: 32
 iron_pickaxe:
   type: item
@@ -74,7 +74,7 @@ clear_weather:
   type: command
   name: Set Weather to clear
   command: weather clear
-  price: 50
+  price: 300
 xp_bottle:
   type: item
   name: XP Bottles
