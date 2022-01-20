@@ -1,18 +1,88 @@
-carrot:
+golden_carrot:
   type: item
   name: Golden Carrots
   item: minecraft:golden_carrot
   price: 200
   amount: 8
-night_vision:
-  type: effect
-  name: Night Vision
-  item: minecraft:night_vision
-  price: 250
-  amount: 600
 torch:
   type: item
   name: Torches
   item: minecraft:torch
   price: 100
   amount: 32
+hopper:
+  type: item
+  name: Hoppers
+  item: minecraft:hopper
+  price: 500
+  amount: 8
+cobblestone:
+  type: item
+  name: Cobblestone
+  item: minecraft:cobblestone
+  price: 50
+  amount: 64
+book:
+  type: item
+  name: Books
+  item: minecraft:book
+  price: 200
+  amount: 4
+firework:
+  type: item
+  name: Fireworks
+  item: minecraft:firework_rocket{Fireworks:{Flight:2}}
+  price: 500
+  amount: 32
+iron_pickaxe:
+  type: item
+  name: Iron Pickaxe
+  item: minecraft:iron_pickaxe
+  price: 500
+  amount: 1
+iron_shovel:
+  type: item
+  name: Iron Shovel
+  item: minecraft:iron_shovel
+  price: 400
+  amount: 1
+iron_axe:
+  type: item
+  name: Iron Axe
+  item: minecraft:iron_axe
+  price: 500
+  amount: 1
+night_vision:
+  type: effect
+  name: Night Vision
+  item: minecraft:night_vision
+  price: 250
+  amount: 600
+fire_resistance:
+  type: effect
+  name: Fire Resistance
+  item: minecraft:fire_resistance
+  price: 500
+  amount: 600
+water_breathing:
+  type: effect
+  name: Water Breathing
+  item: minecraft:water_breathing
+  price: 250
+  amount: 600
+clear_weather:
+  type: command
+  name: Set Weather to clear
+  command: weather clear
+  price: 300
+xp_bottle:
+  type: item
+  name: XP Bottles
+  item: minecraft:experience_bottle
+  price: 100
+  amount: 32
+tp_spawn:
+  type: command
+  name: Teleport to spawn
+  command: tp @s 289.5 73.00 317.5
+  price: 50
