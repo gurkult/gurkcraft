@@ -3,6 +3,7 @@ from yaml import safe_load
 
 BUY_ITEM = "give @a[scores={gurkoins=$price..,shop_$id=1..}] $item $amount"
 BUY_EFFECT = "effect give @a[scores={gurkoins=$price..,shop_$id=1..}] $item $amount 0 true"
+BUY_COMMAND = "execute as @a[scores={gurkoins=$price..,shop_$id=1..}] in minecraft:overworld run $command"
 
 CREATE_TRIGGER = "scoreboard objectives add $trigger trigger\n"
 
@@ -33,6 +34,8 @@ class Generator(BaseGenerator):
                     commands.append(self._format_command(BUY_ITEM, id=id, **data))
                 case "effect":
                     commands.append(self._format_command(BUY_EFFECT, id=id, **data))
+                case "command":
+                    commands.append(self._format_command(BUY_COMMAND, id=id, **data))
                 case "_":
                     print("Unknown type:", data["type"])
                     commands.pop()
