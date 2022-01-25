@@ -7,8 +7,8 @@ RESET_SCOREBOARD = "scoreboard players reset @a lib_teleport_$var\n"
 TELEPORT_COMMAND = "execute as @a[scores={lib_teleport_$axis=$range}] at @s run tp @s "
 UPDATE_COMMAND = "scoreboard players $op @a[scores={lib_teleport_$axis=$range}] lib_teleport_$axis $value\n"
 
-NORMALIZE_COMMAND = "teleport @a[scores={lib_teleport_is_relative=0}] 0 0 0\n"
-INPUTS = [*"xyz", "is_relative"]
+NORMALIZE_COMMAND = "teleport @a[scores={lib_teleport_is_absolute=1}] 0 0 0\n"
+INPUTS = [*"xyz", "is_absolute"]
 
 # Limit teleports in the [-1048575, 1048575] range
 MAX_POWER = 19
@@ -36,7 +36,7 @@ class Generator(BaseGenerator):
 
         with (folder / "teleport.mcfunction").open("w") as file:
             file.write(NORMALIZE_COMMAND)
-            file.write(self._format_command(RESET_SCOREBOARD, var="is_relative"))
+            file.write(self._format_command(RESET_SCOREBOARD, var="is_absolute"))
 
             for axis in "xyz":
                 for direction in (1, -1):
