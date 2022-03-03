@@ -35,7 +35,7 @@ class Generator(BaseGenerator):
         commands = []
         setups = []
 
-        # home
+        # TP to home
         setups.append(self._format_command(CREATE_TRIGGER, trigger="shop_tp_home"))
         teleports.append({
             'x': "store result score @s lib_teleport_x run data get entity @s SpawnX",
