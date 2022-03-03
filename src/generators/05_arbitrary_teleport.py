@@ -51,9 +51,9 @@ class Generator(BaseGenerator):
             setups.append(self._format_command(CREATE_SCOREBOARD, axis='x', id=i))
             setups.append(self._format_command(CREATE_SCOREBOARD, axis='y', id=i))
             setups.append(self._format_command(CREATE_SCOREBOARD, axis='z', id=i))
-            setups.append(self._format_command(SET_SCOREBOARD, axis='x', id=i, val=289.5))
-            setups.append(self._format_command(SET_SCOREBOARD, axis='y', id=i, val=73.00))
-            setups.append(self._format_command(SET_SCOREBOARD, axis='z', id=i, val=317.5))
+            setups.append(self._format_command(SET_SCOREBOARD, axis='x', id=i, val=289))
+            setups.append(self._format_command(SET_SCOREBOARD, axis='y', id=i, val=73))
+            setups.append(self._format_command(SET_SCOREBOARD, axis='z', id=i, val=317))
             setups.append(self._format_command(CREATE_TRIGGER, trigger=f"shop_tp_{i}"))
             setups.append(self._format_command(CREATE_TRIGGER, trigger=f"set_tp_{i}"))
             teleports.append({
