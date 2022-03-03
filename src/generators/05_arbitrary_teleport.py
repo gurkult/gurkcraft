@@ -70,7 +70,7 @@ class Generator(BaseGenerator):
                 'z': f"data get entity @s Pos[2]",
                 'id': i
             })
-        # Write stuff
+        # Write to mcfunctions
         with (folder / "setup.mcfunction").open("w") as file:
             file.write('\n'.join(setups))
 
