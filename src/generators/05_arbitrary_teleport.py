@@ -75,7 +75,7 @@ class Generator(BaseGenerator):
 
         with (folder / "main.mcfunction").open("w") as file:
             file.write('\n'.join([self._format_command(TELEPORT_FLOW, **teleport) for teleport in teleports]))
-            file.write('\n') # separator
+            file.write('\n')  # Separator
             file.write('\n'.join([self._format_command(SET_TP, **command) for command in commands]))
 
         return GeneratorResult(["generated:arbitary_teleport/setup"], ["generated:arbitary_teleport/main"])
