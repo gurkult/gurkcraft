@@ -45,6 +45,7 @@ class Generator(BaseGenerator):
             'price': 100,
             'infprice': 99
         })
+
         # Customizable locations
         for i in range(1, 6):
             setups.append(self._format_command(CREATE_SCOREBOARD, axis='x', id=i))
