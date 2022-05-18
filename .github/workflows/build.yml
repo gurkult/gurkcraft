@@ -3,6 +3,7 @@ name: Build Pack
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: "build-${{ github.event.sha }}"
